@@ -89,7 +89,7 @@ export default function DropTheBookLanding() {
       <header className="sticky top-0 z-40 backdrop-blur supports-[backdrop-filter]:bg-black/40 bg-black/20 border-b border-white/5">
         <div className="mx-auto max-w-7xl px-4 py-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <img src="/assets/dtb-logo.png" alt="Drop The Book logo" className="h-9 w-auto" />
+            <img src="/assets/DTB-Logo-black.png" alt="Drop The Book logo" className="h-9 w-auto" />
             <span className="text-lg font-semibold tracking-tight text-[var(--dtb-light)]">Drop The Book</span>
           </div>
           <nav className="hidden md:flex items-center gap-6 text-sm text-[var(--dtb-gray)]">
@@ -152,23 +152,6 @@ export default function DropTheBookLanding() {
         </div>
       </section>
 
-      {/* Social proof */}
-      <section className="mx-auto max-w-7xl px-4 pb-10">
-        <div className="grid md:grid-cols-3 gap-4 text-center">
-          <div className="rounded-xl border border-white/10 bg-white/5 p-6">
-            <p className="text-3xl font-bold text-white">0%</p>
-            <p className="text-sm text-[var(--dtb-gray)]">Juice / Vig</p>
-          </div>
-          <div className="rounded-xl border border-white/10 bg-white/5 p-6">
-            <p className="text-3xl font-bold text-white">30s</p>
-            <p className="text-sm text-[var(--dtb-gray)]">Odds Refresh Cadence</p>
-          </div>
-          <div className="rounded-xl border border-white/10 bg-white/5 p-6">
-            <p className="text-3xl font-bold text-white">6</p>
-            <p className="text-sm text-[var(--dtb-gray)]">Leagues Covered</p>
-          </div>
-        </div>
-      </section>
 
       {/* Features */}
       <section id="features" className="mx-auto max-w-7xl px-4 py-16">
@@ -209,15 +192,7 @@ export default function DropTheBookLanding() {
             <div className="rounded-2xl border border-white/10 p-6 bg-white/5">
               <div className="flex items-center gap-3 text-sm text-[var(--dtb-gray)]"><MessageSquare className="h-4 w-4" /> Live thread: Sunday slate odds talk</div>
               <div className="mt-4 space-y-3">
-                {[1,2,3].map((i)=> (
-                  <div key={i} className="rounded-xl bg-black/30 border border-white/10 p-4">
-                    <div className="flex items-center justify-between text-sm">
-                      <span className="text-[var(--dtb-light)]">@Member{i}</span>
-                      <span className="text-[var(--dtb-gray)]">just now</span>
-                    </div>
-                    <p className="mt-2 text-[var(--dtb-gray)]">Looking at the spread — love the matchup here. Anyone offering +3.5?</p>
-                  </div>
-                ))}
+                 <img src="/assets/DTB - Forum Image.png" alt="Drop The Book Forum"/>
               </div>
             </div>
           </div>
@@ -338,7 +313,7 @@ export default function DropTheBookLanding() {
         <div className="mx-auto max-w-7xl px-4 py-10 grid md:grid-cols-3 gap-8">
           <div>
             <div className="flex items-center gap-3">
-              <img src="/assets/dtb-logo.png" alt="Drop The Book logo" className="h-8 w-auto" />
+              <img src="/assets/DTB-Logo-black.png" alt="Drop The Book logo" className="h-8 w-auto" />
               <span className="font-semibold text-[var(--dtb-light)]">Drop The Book</span>
             </div>
             <p className="mt-3 text-sm text-[var(--dtb-gray)]">Peer‑to‑peer, juice‑free sports betting. Membership only.</p>
@@ -358,8 +333,8 @@ export default function DropTheBookLanding() {
               <li><a href="#pricing" className="hover:text-white">Pricing</a></li>
               <li><a href="#community" className="hover:text-white">Community</a></li>
               <li><a href="#faq" className="hover:text-white">FAQ</a></li>
-              <li><a href="#" className="hover:text-white">Terms</a></li>
-              <li><a href="#" className="hover:text-white">Privacy</a></li>
+              <li><a href="https://dropthebook.com/assets/docs/DTB_TandC.pdf" className="hover:text-white">Terms</a></li>
+              <li><a href="https://dropthebook.com/assets/docs/DTB_Privacy.pdf" className="hover:text-white">Privacy</a></li>
             </ul>
           </div>
         </div>
