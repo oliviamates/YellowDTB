@@ -318,7 +318,7 @@ export default function DropTheBookLanding() {
             </div>
             <p className="mt-3 text-sm text-[var(--dtb-gray)]">Peer‑to‑peer, juice‑free sports betting. Membership only.</p>
           </div>
-          <div className="text-sm text-[var(--dtb-gray)]">
+          <div className="text-sm text-[var(--dtb-gclearray)]">
             <p className="font-semibold text-[var(--dtb-light)]">Legal & Responsible Play</p>
             <ul className="mt-2 space-y-1 list-disc pl-5">
               <li>21+ only. Location restrictions may apply by jurisdiction.</li>
