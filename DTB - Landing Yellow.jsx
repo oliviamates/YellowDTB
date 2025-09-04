@@ -99,8 +99,8 @@ export default function DropTheBookLanding() {
             <a href="#faq" className="hover:text-white">FAQ</a>
           </nav>
           <div className="flex items-center gap-3">
-            <Button className="bg-transparent border border-white/20 text-[var(--dtb-light)] hover:bg-white/10">Sign in</Button>
-            <Button className="bg-[var(--dtb-yellow)] text-black hover:bg-[var(--dtb-yellow)]/90">Start Free Trial</Button>
+            <Button className="bg-transparent border border-white/20 text-[var(--dtb-light)] hover:bg-white/10" onclick="https://app.dropthebook.com/enrollment">Sign in</Button>
+            <Button className="bg-[var(--dtb-yellow)] text-black hover:bg-[var(--dtb-yellow)]/90" onclick="https://app.dropthebook.com/enrollment">Start Free Trial</Button>
           </div>
         </div>
       </header>
@@ -111,14 +111,13 @@ export default function DropTheBookLanding() {
         <div className="mx-auto max-w-7xl px-4 py-20 md:py-28 grid md:grid-cols-2 gap-12 items-center">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
             <h1 className="text-4xl md:text-5xl font-extrabold leading-tight text-white">
-              Bet with People. <span className="text-[var(--dtb-yellow)]">Not the House.</span>
+              Bet with Friends. <span className="text-[var(--dtb-yellow)]">Not the House.</span>
             </h1>
             <p className="mt-5 text-lg text-[var(--dtb-gray)] max-w-xl">
               Drop The Book is a membership‑only, peer‑to‑peer sports betting platform with <span className="text-white font-medium">zero juice</span>. Live, vig‑free odds refresh every 30 seconds across NFL, NCAA Football & Basketball, MLB, NHL, and NBA.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4">
-              <Button className="bg-[var(--dtb-yellow)] text-black hover:bg-[var(--dtb-yellow)]/90 text-base px-6 py-6">Start Free 7‑Day Trial</Button>
-              <Button variant="outline" className="bg-transparent border border-white/20 text-[var(--dtb-light)] hover:bg-white/10 text-base px-6 py-6">See Live Odds</Button>
+              <Button className="bg-[var(--dtb-yellow)] text-black hover:bg-[var(--dtb-yellow)]/90 text-base px-6 py-6" onclick="https://app.dropthebook.com/enrollment">Start Free 7‑Day Trial</Button>
             </div>
             <div className="mt-6 flex items-center gap-3 text-[var(--dtb-gray)] text-sm">
               <Trophy className="h-4 w-4" />
@@ -247,7 +246,7 @@ export default function DropTheBookLanding() {
               </ul>
             </CardContent>
             <CardFooter>
-              <Button className="w-full bg-[var(--dtb-yellow)] text-black hover:bg-[var(--dtb-yellow)]/90">Start Free Trial</Button>
+              <Button className="w-full bg-[var(--dtb-yellow)] text-black hover:bg-[var(--dtb-yellow)]/90" onclick="https://app.dropthebook.com/enrollment">Start Free Trial</Button>
             </CardFooter>
           </Card>
 
@@ -268,7 +267,7 @@ export default function DropTheBookLanding() {
               </ul>
             </CardContent>
             <CardFooter>
-              <Button className="w-full bg-[var(--dtb-yellow)] text-black hover:bg-[var(--dtb-yellow)]/90">Go Annual</Button>
+              <Button className="w-full bg-[var(--dtb-yellow)] text-black hover:bg-[var(--dtb-yellow)]/90" onclick="https://app.dropthebook.com/enrollment">Go Annual</Button>
             </CardFooter>
           </Card>
         </div>
@@ -277,7 +276,7 @@ export default function DropTheBookLanding() {
         <div className="mt-10 mx-auto max-w-2xl rounded-2xl border border-white/10 bg-white/5 p-6">
           <div className="flex flex-col md:flex-row gap-3">
             <Input placeholder="Enter your email" className="bg-black/40 border-white/10 text-[var(--dtb-light)] placeholder:text-[var(--dtb-gray)]" />
-            <Button className="bg-[var(--dtb-purple)] text-white hover:bg-[var(--dtb-purple)]/90">Get Early Access</Button>
+            <Button className="bg-[var(--dtb-purple)] text-white hover:bg-[var(--dtb-purple)]/90" onclick="support@dropthebook.com">Get Early Access</Button>
           </div>
           <p className="mt-3 text-xs text-[var(--dtb-gray)]">By submitting, you agree to our Terms and acknowledge our Privacy Policy.</p>
         </div>
