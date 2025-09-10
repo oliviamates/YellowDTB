@@ -99,7 +99,7 @@ export default function DropTheBookLanding() {
             <a href="#faq" className="hover:text-white">FAQ</a>
           </nav>
           <div className="flex items-center gap-3">
-            <Button className="bg-transparent border border-white/20 text-[var(--dtb-light)] hover:bg-white/10" onclick="https://app.dropthebook.com/enrollment">Sign in</Button>
+            <Button className="bg-transparent border border-white/20 text-[var(--dtb-light)] hover:bg-white/10" onclick="https://app.https://app.dropthebook.com/login.com/enrollment">Sign in</Button>
             <Button className="bg-[var(--dtb-yellow)] text-black hover:bg-[var(--dtb-yellow)]/90" onclick="https://app.dropthebook.com/enrollment">Start Free Trial</Button>
           </div>
         </div>
@@ -156,7 +156,7 @@ export default function DropTheBookLanding() {
       {/* Features */}
       <section id="features" className="mx-auto max-w-7xl px-4 py-16">
         <div className="text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-white">Everything you need to bet peer‑to‑peer</h2>
+          <h2 id="features" className="text-3xl md:text-4xl font-bold text-white">Everything you need to bet peer‑to‑peer</h2>
           <p className="mt-3 text-[var(--dtb-gray)]">Fair pricing, real‑time lines, and powerful tools to manage your action.</p>
         </div>
         <div className="mt-10 grid md:grid-cols-3 gap-6">
@@ -192,7 +192,15 @@ export default function DropTheBookLanding() {
             <div className="rounded-2xl border border-white/10 p-6 bg-white/5">
               <div className="flex items-center gap-3 text-sm text-[var(--dtb-gray)]"><MessageSquare className="h-4 w-4" /> Live thread: Sunday slate odds talk</div>
               <div className="mt-4 space-y-3">
-                 <img src="/assets/DTB - Forum Image.png" alt="Drop The Book Forum"/>
+                {[1,2,3].map((i)=> (
+                  <div key={i} className="rounded-xl bg-black/30 border border-white/10 p-4">
+                    <div className="flex items-center justify-between text-sm">
+                      <span className="text-[var(--dtb-light)]">@Member{i}</span>
+                      <span className="text-[var(--dtb-gray)]">just now</span>
+                    </div>
+                    <p className="mt-2 text-[var(--dtb-gray)]">Looking at the spread — love the matchup here. Anyone offering +3.5?</p>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
@@ -313,7 +321,7 @@ export default function DropTheBookLanding() {
         <div className="mx-auto max-w-7xl px-4 py-10 grid md:grid-cols-3 gap-8">
           <div>
             <div className="flex items-center gap-3">
-              <img src="/assets/DTB-Logo-black.png" alt="Drop The Book logo" className="h-8 w-auto" />
+              <img src="/assets/DTB-Logo-black.png" alt="Drop The Book logo" className="h-8 w-auto" />*/
               <span className="font-semibold text-[var(--dtb-light)]">Drop The Book</span>
             </div>
             <p className="mt-3 text-sm text-[var(--dtb-gray)]">Peer‑to‑peer, juice‑free sports betting. Membership only.</p>
