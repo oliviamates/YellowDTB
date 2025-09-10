@@ -174,31 +174,34 @@ export default function DropTheBookLanding() {
         </div>
       </section>
 
-      {/* Community */}
-      <section id="community" className="mx-auto max-w-7xl px-4 py-16">
+            {/* Stats section */}
+      <section className="mx-auto max-w-7xl px-4 py-16">
         <div className="grid md:grid-cols-2 gap-10 items-center">
           <div>
-            <h3 className="text-2xl md:text-3xl font-bold text-white">Join the conversation</h3>
-            <p className="mt-3 text-[var(--dtb-gray)]">
-              Our interactive forum makes it easy to chat lines, share picks, and swap strategies. There’s also a dedicated poker forum and plenty of ways to meet new members.
-            </p>
+            <h3 className="text-2xl md:text-3xl font-bold text-white">Know your edge with detailed Records & Statistics</h3>
+            <p className="mt-3 text-[var(--dtb-gray)]">See performance by day, week, and month. Break down profits by league, bet type, and matchup — even compare head‑to‑head vs specific members.</p>
             <ul className="mt-6 space-y-3 text-[var(--dtb-light)]">
-              <li className="flex items-start gap-3"><Check className="mt-1 h-5 w-5 text-[var(--dtb-yellow)]" /> Team/game discussion threads</li>
-              <li className="flex items-start gap-3"><Check className="mt-1 h-5 w-5 text-[var(--dtb-yellow)]" /> Follow members and get notified when they post or offer bets</li>
-              <li className="flex items-start gap-3"><Check className="mt-1 h-5 w-5 text-[var(--dtb-yellow)]" /> Head‑to‑head records and friendly rivalries</li>
+              {[
+                "Wins/Losses and money won/lost",
+                "Filters for daily, weekly, monthly views",
+                "Head‑to‑head vs specific members",
+              ].map((item) => (
+                <li key={item} className="flex items-start gap-3"><Check className="mt-1 h-5 w-5 text-[var(--dtb-yellow)]" /> {item}</li>
+              ))}
             </ul>
           </div>
           <div>
             <div className="rounded-2xl border border-white/10 p-6 bg-white/5">
-              <div className="flex items-center gap-3 text-sm text-[var(--dtb-gray)]"><MessageSquare className="h-4 w-4" /> Live thread: Sunday slate odds talk</div>
-              <div className="mt-4 space-y-3">
-                {[1,2,3].map((i)=> (
-                  <div key={i} className="rounded-xl bg-black/30 border border-white/10 p-4">
-                    <div className="flex items-center justify-between text-sm">
-                      <span className="text-[var(--dtb-light)]">@Member{i}</span>
-                      <span className="text-[var(--dtb-gray)]">just now</span>
-                    </div>
-                    <p className="mt-2 text-[var(--dtb-gray)]">Looking at the spread — love the matchup here. Anyone offering +3.5?</p>
+              <div className="h-40 rounded-xl bg-gradient-to-r from-[var(--dtb-yellow)]/30 to-transparent ring-1 ring-white/10" />
+              <div className="mt-4 grid grid-cols-3 gap-4 text-center">
+                {[
+                  { label: "W/L", value: "58%" },
+                  { label: "ROI", value: "+12.4%" },
+                  { label: "H2H", value: "7–2" },
+                ].map((s) => (
+                  <div key={s.label} className="rounded-xl bg-black/30 border border-white/10 p-4">
+                    <p className="text-2xl font-bold text-white">{s.value}</p>
+                    <p className="text-xs text-[var(--dtb-gray)]">{s.label}</p>
                   </div>
                 ))}
               </div>
@@ -206,6 +209,7 @@ export default function DropTheBookLanding() {
           </div>
         </div>
       </section>
+
 
       {/* Pricing */}
       <section id="pricing" className="mx-auto max-w-7xl px-4 py-16">
@@ -264,35 +268,27 @@ export default function DropTheBookLanding() {
           <p className="mt-3 text-xs text-[var(--dtb-gray)]">By submitting, you agree to our Terms and acknowledge our Privacy Policy.</p>
         </div>
       </section>
-
-      {/* Stats section */}
-      <section className="mx-auto max-w-7xl px-4 py-16">
+            {/* Community */}
+      <section id="community" className="mx-auto max-w-7xl px-4 py-16">
         <div className="grid md:grid-cols-2 gap-10 items-center">
           <div>
-            <h3 className="text-2xl md:text-3xl font-bold text-white">Know your edge with detailed Records & Statistics</h3>
-            <p className="mt-3 text-[var(--dtb-gray)]">See performance by day, week, and month. Break down profits by league, bet type, and matchup — even compare head‑to‑head vs specific members.</p>
+            <h3 className="text-2xl md:text-3xl font-bold text-white">Join the conversation</h3>
+            <p className="mt-3 text-[var(--dtb-gray)]">
+              Our interactive forum makes it easy to chat lines, share picks, and swap strategies. There’s also a dedicated poker forum and plenty of ways to meet new members.
+            </p>
             <ul className="mt-6 space-y-3 text-[var(--dtb-light)]">
-              {[
-                "Wins/Losses and money won/lost",
-                "Filters for daily, weekly, monthly views",
-                "Head‑to‑head vs specific members",
-              ].map((item) => (
-                <li key={item} className="flex items-start gap-3"><Check className="mt-1 h-5 w-5 text-[var(--dtb-yellow)]" /> {item}</li>
-              ))}
+              <li className="flex items-start gap-3"><Check className="mt-1 h-5 w-5 text-[var(--dtb-yellow)]" /> Team/game discussion threads</li>
+              <li className="flex items-start gap-3"><Check className="mt-1 h-5 w-5 text-[var(--dtb-yellow)]" /> Follow members and get notified when they post or offer bets</li>
+              <li className="flex items-start gap-3"><Check className="mt-1 h-5 w-5 text-[var(--dtb-yellow)]" /> Head‑to‑head records and friendly rivalries</li>
             </ul>
           </div>
           <div>
             <div className="rounded-2xl border border-white/10 p-6 bg-white/5">
-              <div className="h-40 rounded-xl bg-gradient-to-r from-[var(--dtb-yellow)]/30 to-transparent ring-1 ring-white/10" />
-              <div className="mt-4 grid grid-cols-3 gap-4 text-center">
-                {[
-                  { label: "W/L", value: "58%" },
-                  { label: "ROI", value: "+12.4%" },
-                  { label: "H2H", value: "7–2" },
-                ].map((s) => (
-                  <div key={s.label} className="rounded-xl bg-black/30 border border-white/10 p-4">
-                    <p className="text-2xl font-bold text-white">{s.value}</p>
-                    <p className="text-xs text-[var(--dtb-gray)]">{s.label}</p>
+              <div className="flex items-center gap-3 text-sm text-[var(--dtb-gray)]"><MessageSquare className="h-4 w-4" /> Live thread: Sunday slate odds talk</div>
+              <div className="mt-4 space-y-3">
+                {[1,2,3].map((i)=> (
+                  <div key={i} className="rounded-xl bg-black/30 border border-white/10 p-4">
+                    <img src= "DTB - Forum Image.png"/>
                   </div>
                 ))}
               </div>
@@ -300,6 +296,7 @@ export default function DropTheBookLanding() {
           </div>
         </div>
       </section>
+
 
       {/* FAQ */}
       <section id="faq" className="mx-auto max-w-7xl px-4 py-16">
