@@ -83,7 +83,7 @@ export default function DropTheBookLanding() {
         <div className="mx-auto max-w-7xl px-4 py-2 text-center text-sm">
           <span className="font-medium">Start your free 7‑day trial today — cancel anytime.</span>
         </div>
-      </div>
+      </div> 
 
       {/* Header */}
       <header className="sticky top-0 z-40 backdrop-blur supports-[backdrop-filter]:bg-black/40 bg-black/20 border-b border-white/5">
@@ -109,6 +109,7 @@ export default function DropTheBookLanding() {
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-[var(--dtb-purple)]/20 via-transparent to-transparent pointer-events-none" />
         <div className="mx-auto max-w-7xl px-4 py-20 md:py-28 grid md:grid-cols-2 gap-12 items-center">
+          <img src="DTB-Logo-black.png"/>
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
             <h1 className="text-4xl md:text-5xl font-extrabold leading-tight text-white">
               Bet with Friends. <span className="text-[var(--dtb-yellow)]">Not the House.</span>
@@ -320,6 +321,7 @@ export default function DropTheBookLanding() {
             <div className="flex items-center gap-3">
               <img src="/assets/DTB-Logo-black.png" alt="Drop The Book logo" className="h-8 w-auto" />*/
               <span className="font-semibold text-[var(--dtb-light)]">Drop The Book</span>
+              
             </div>
             <p className="mt-3 text-sm text-[var(--dtb-gray)]">Peer‑to‑peer, juice‑free sports betting. Membership only.</p>
           </div>
